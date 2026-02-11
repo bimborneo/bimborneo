@@ -863,9 +863,52 @@
     <script>
         document.getElementById('current-year').textContent = new Date().getFullYear();
     </script>
+
+        <script>
+        // 1. FUNGSI MENU MOBILE (HAMBURGER)
+        function toggleMenu() {
+            const navMenu = document.getElementById('navMenu');
+            if (navMenu) {
+                navMenu.classList.toggle('active');
+            }
+        }
+
+        // 2. FUNGSI DETAIL PENGALAMAN (ACCORDION)
+        function toggleDetail(element) {
+            // Mencari elemen pembungkus (timeline-item)
+            const item = element.closest('.timeline-item');
+            const content = item.querySelector('.detail-content');
+            
+            // Cek apakah item ini sudah aktif
+            const isActive = item.classList.contains('active');
+
+            // Tutup semua item lain agar rapi
+            document.querySelectorAll('.timeline-item').forEach(otherItem => {
+                otherItem.classList.remove('active');
+                const otherContent = otherItem.querySelector('.detail-content');
+                if (otherContent) otherContent.classList.remove('active');
+            });
+
+            // Jika sebelumnya tidak aktif, sekarang aktifkan
+            if (!isActive) {
+                item.classList.add('active');
+                content.classList.add('active');
+            }
+        }
+
+        // 3. TUTUP MENU OTOMATIS SAAT LINK DIKLIK
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                const navMenu = document.getElementById('navMenu');
+                if (navMenu) navMenu.classList.remove('active');
+            });
+        });
+    </script>
+        
 </body>
 
 
 </html>
+
 
 
