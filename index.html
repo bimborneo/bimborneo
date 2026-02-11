@@ -842,11 +842,19 @@
             <a href="https://www.tiktok.com/@bimborneo" class="social-btn" title="TikTok"><i class="fab fa-tiktok"></i></a>
         </div>
 
-        <footer style="margin-top:80px; font-size:0.8rem; color:#555;">
-            &copy; 2026 Muhammad Wardani | BIM Borneo.
-        </footer>
-    </section>
-    <script src="script.js"></script>
+        <footer class="footer-section">
+        <div class="footer-content">
+            <p>&copy; <span id="current-year"></span> <strong>M. Wardani | BIM Borneo</strong>. All Rights Reserved.</p>
+            <p class="disclaimer">
+                Seluruh konten website, termasuk pemodelan 3D, hasil olah data LiDAR, dan dokumentasi drone adalah hak kekayaan intelektual kreator. Dilarang keras menyalin, mereproduksi, atau menggunakan aset tanpa izin tertulis.
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
 </body>
+
 
 </html>
