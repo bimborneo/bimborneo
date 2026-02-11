@@ -1175,4 +1175,37 @@
 /* Efek zoom saat kartu jurnal disentuh */
 .tech-card:hover .jurnal-img-box img {
     transform: scale(1.05);
+
+}
+/* =========================================
+   FOOTER & COPYRIGHT (PERLINDUNGAN ASET)
+   ========================================= */
+
+.footer-section {
+    background-color: #020202; /* Warna latar sangat gelap */
+    border-top: 1px solid #222; /* Garis pemisah halus di atas footer */
+    padding: 40px 20px;
+    text-align: center;
+    margin-top: 60px; /* Jarak dari konten di atasnya */
+}
+
+.footer-content p {
+    color: #ccc;
+    font-size: 1rem;
+    margin-bottom: 12px;
+    letter-spacing: 0.5px;
+}
+
+/* Mengubah warna nama Mas menjadi Cyan Neon */
+.footer-content p strong {
+    color: var(--cyan-neon); 
+}
+
+/* Format teks peringatan (Disclaimer) yang lebih kecil dan redup */
+.footer-content .disclaimer {
+    color: #666;
+    font-size: 0.85rem;
+    max-width: 700px;
+    margin: 0 auto; /* Memastikan teks tetap di tengah */
+    line-height: 1.6;
 }
