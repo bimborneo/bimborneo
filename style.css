@@ -1209,3 +1209,18 @@
     margin: 0 auto; /* Memastikan teks tetap di tengah */
     line-height: 1.6;
 }
+/* Pastikan judul pengalaman berada di lapisan depan agar bisa diklik */
+.timeline-header {
+    position: relative;
+    z-index: 10;
+    cursor: pointer !important;
+}
+
+/* Kunci utama agar konten muncul saat class active menyala */
+.detail-content.active {
+    max-height: 2000px !important; /* Nilai besar agar semua teks muat */
+    opacity: 1 !important;
+    visibility: visible !important;
+    display: block !important;
+    padding: 20px;
+}
