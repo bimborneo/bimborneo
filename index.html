@@ -3,14 +3,14 @@
 
 <head>
     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-8LE0PK6CYN"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8LE0PK6CYN"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-  gtag('config', 'G-8LE0PK6CYN');
-</script>
+        gtag('config', 'G-8LE0PK6CYN');
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Muhammad Wardani | BIM & GIS Specialist</title>
@@ -83,6 +83,19 @@
                 style="color: var(--cyan-neon); border: 1px solid var(--cyan-neon); padding: 5px 10px; border-radius: 4px;"
                 onclick="toggleMenu()">Kontak</a>
 
+            <div class="language-switcher" style="display: inline-flex; align-items: center; gap: 10px;">
+                <a href="index.html" title="Bahasa Indonesia"
+                    style="opacity: 1; transition: opacity 0.3s ease; display: flex;">
+                    <img src="https://flagcdn.com/w40/id.png" alt="ID" style="width: 26px; border-radius: 3px;">
+                </a>
+
+                <a href="index_en.html" title="English"
+                    style="opacity: 0.4; transition: opacity 0.3s ease; display: flex;"
+                    onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.4'">
+                    <img src="https://flagcdn.com/w40/gb.png" alt="EN" style="width: 26px; border-radius: 3px;">
+                </a>
+            </div>
+
             <div class="mobile-contact-area">
 
                 <p class="menu-label">KONTAK</p>
@@ -100,10 +113,14 @@
 
                 <p class="menu-label" style="margin-top: 25px;">SOSIAL MEDIA</p>
                 <div class="nav-social-icons">
-                    <a href="https://www.x.com/anzvest" class="nav-icon" title="Twitter"><i class="fab fa-twitter"></i></a>
-                    <a href="https://www.instagram.com/wardanni_/" class="nav-icon" title="Instagram"><i class="fab fa-instagram"></i></a>
-                    <a href="https://www.youtube.com/@BIMBorneo" class="nav-icon" title="YouTube"><i class="fab fa-youtube"></i></a>
-                    <a href="https://www.tiktok.com/@bimborneo" class="nav-icon" title="TikTok"><i class="fab fa-tiktok"></i></a>
+                    <a href="https://www.x.com/anzvest" class="nav-icon" title="Twitter"><i
+                            class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/wardanni_/" class="nav-icon" title="Instagram"><i
+                            class="fab fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/@BIMBorneo" class="nav-icon" title="YouTube"><i
+                            class="fab fa-youtube"></i></a>
+                    <a href="https://www.tiktok.com/@bimborneo" class="nav-icon" title="TikTok"><i
+                            class="fab fa-tiktok"></i></a>
                 </div>
 
             </div>
@@ -152,11 +169,11 @@
             <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
                 <a href="#portfolio" class="social-btn"
                     style="width:auto; padding: 12px 35px; border-radius: 50px; font-weight: bold; letter-spacing: 1px;">
-                    EXPLORE PORTFOLIO
+                    LIHAT PORTOFOLIO
                 </a>
                 <a href="#contact" class="social-btn"
                     style="width:auto; padding: 12px 35px; border-radius: 50px; background:transparent; border: 1px solid #333; color: #fff;">
-                    CONTACT ME
+                    HUBUNGI SAYA
                 </a>
             </div>
         </div>
@@ -167,7 +184,7 @@
 
         <div class="about-grid scroll-animate">
             <div class="about-image-box">
-                <img src="mwardani.jpg" alt="Muhammad Wardani">
+                <img src="mwardani.jpg" alt="Muhammad Wardani" style="cursor: pointer;" onclick="openLightbox(this)">
             </div>
             <div class="about-text">
                 <h2
@@ -227,7 +244,7 @@
                         <li>Membuat Model BIM untuk memunculkan bar bending schedule dan Volume kebutuhan Tulangan Box
                             Culvert.</li>
                         <li>Membuat Peta Trase dan Inventaris Jembatan Jalan Perbatasan Nasional di ArcGIS.</li>
-                         <li>Membuat Peta foto udara dan Digital Terrain Model (DTM) pada area longsoran di jalan.</li>
+                        <li>Membuat Peta foto udara dan Digital Terrain Model (DTM) pada area longsoran di jalan.</li>
                     </ul>
                 </div>
             </div>
@@ -254,7 +271,7 @@
                     </ul>
                 </div>
             </div>
-            
+
             <div class="timeline-item scroll-animate">
                 <span class="timeline-date">Januari 2025</span>
                 <div class="timeline-header" onclick="toggleDetail(this)">
@@ -521,7 +538,7 @@
 
             <div class="tech-card">
                 <div class="card-img-box">
-                    <img src="porto1.jpg" alt="BIM IKN">
+                    <img src="porto1.jpg" alt="BIM IKN" style="cursor: pointer;" onclick="openLightbox(this)">
                 </div>
                 <div class="card-content">
                     <h3 class="card-title">PROYEK PEMBANGUNAN JBH SEKSI 6A IKN, PENAJAM PASER UTARA, KALIMANTAN TIMUR
@@ -532,7 +549,7 @@
 
             <div class="tech-card">
                 <div class="card-img-box">
-                    <img src="porto2.jpg" alt="BIM IKN">
+                    <img src="porto2.jpg" alt="BIM IKN" style="cursor: pointer;" onclick="openLightbox(this)">
                 </div>
                 <div class="card-content">
                     <h3 class="card-title">PROYEK PERENCANAAN GEDUNG DINAS
@@ -546,7 +563,7 @@
 
             <div class="tech-card">
                 <div class="card-img-box">
-                    <img src="porto3.jpg" alt="BIM IKN">
+                    <img src="porto3.jpg" alt="BIM IKN" style="cursor: pointer;" onclick="openLightbox(this)">
                 </div>
                 <div class="card-content">
                     <h3 class="card-title">PROYEK PERENCANAAN GEDUNG 4 DINAS
@@ -610,7 +627,8 @@
         <div class="grid-3">
             <div class="tech-card">
                 <div class="card-img-box" style="height: 150px;">
-                    <img src="mwardaniwisuda.jpg" style="object-fit:contain; padding:20px;" alt="UPR">
+                    <img src="mwardaniwisuda.jpg" style="object-fit:contain; padding:20px; cursor: pointer;" alt="UPR"
+                        onclick="openLightbox(this)">
                 </div>
                 <div class="card-content">
                     <h3 class="card-title">S1 Teknik Sipil</h3>
@@ -627,7 +645,7 @@
         <div class="grid-4">
             <div class="tech-card">
                 <div class="card-img-box">
-                    <img src="l1.png" alt="Sertifikat">
+                    <img src="l1.png" alt="Sertifikat" style="cursor: pointer;" onclick="openLightbox(this)">
                 </div>
                 <div class="card-content">
                     <h3 class="card-title" style="font-size:1rem;">Pelaksana Pemeliharaan Jalan</h3>
@@ -636,7 +654,7 @@
             </div>
             <div class="tech-card">
                 <div class="card-img-box">
-                    <img src="l2.png" alt="Sertifikat">
+                    <img src="l2.png" alt="Sertifikat" style="cursor: pointer;" onclick="openLightbox(this)">
                 </div>
                 <div class="card-content">
                     <h3 class="card-title" style="font-size:1rem;">Revit Beginner to Advance</h3>
@@ -645,7 +663,7 @@
             </div>
             <div class="tech-card">
                 <div class="card-img-box">
-                    <img src="l3.png" alt="Sertifikat">
+                    <img src="l3.png" alt="Sertifikat" style="cursor: pointer;" onclick="openLightbox(this)">
                 </div>
                 <div class="card-content">
                     <h3 class="card-title" style="font-size:1rem;">Mahir Menggunakan Autodesk Civil 3D Untuk Desain
@@ -655,7 +673,7 @@
             </div>
             <div class="tech-card">
                 <div class="card-img-box">
-                    <img src="l4.png" alt="Sertifikat">
+                    <img src="l4.png" alt="Sertifikat" style="cursor: pointer;" onclick="openLightbox(this)">
                 </div>
                 <div class="card-content">
                     <h3 class="card-title" style="font-size:1rem;">
@@ -665,17 +683,17 @@
             </div>
             <div class="tech-card">
                 <div class="card-img-box">
-                    <img src="l5.png" alt="Sertifikat">
+                    <img src="l5.png" alt="Sertifikat" style="cursor: pointer;" onclick="openLightbox(this)">
                 </div>
                 <div class="card-content">
                     <h3 class="card-title" style="font-size:1rem;">Resource Management Optimasi Analisa Harga Satuan dan
                         Material dalam Pembuatan RAB Menggunakan Estimator.id</h3>
-                    <p class="card-desc">Estimator.id)</p>
+                    <p class="card-desc">Estimator.id</p>
                 </div>
             </div>
             <div class="tech-card">
                 <div class="card-img-box">
-                    <img src="l6.png" alt="Sertifikat">
+                    <img src="l6.png" alt="Sertifikat" style="cursor: pointer;" onclick="openLightbox(this)">
                 </div>
                 <div class="card-content">
                     <h3 class="card-title" style="font-size:1rem;">Basic Course Building Modelling With Revit</h3>
@@ -684,7 +702,7 @@
             </div>
             <div class="tech-card">
                 <div class="card-img-box">
-                    <img src="l7.png" alt="Sertifikat">
+                    <img src="l7.png" alt="Sertifikat" style="cursor: pointer;" onclick="openLightbox(this)">
                 </div>
                 <div class="card-content">
                     <h3 class="card-title" style="font-size:1rem;">Personal Branding dan Perencanaan Karir</h3>
@@ -693,7 +711,7 @@
             </div>
             <div class="tech-card">
                 <div class="card-img-box">
-                    <img src="l8.png" alt="Sertifikat">
+                    <img src="l8.png" alt="Sertifikat" style="cursor: pointer;" onclick="openLightbox(this)">
                 </div>
                 <div class="card-content">
                     <h3 class="card-title" style="font-size:1rem;">Perhitungan Struktur Menggunakan Sanspro</h3>
@@ -702,7 +720,7 @@
             </div>
             <div class="tech-card">
                 <div class="card-img-box">
-                    <img src="l9.png" alt="Sertifikat">
+                    <img src="l9.png" alt="Sertifikat" style="cursor: pointer;" onclick="openLightbox(this)">
                 </div>
                 <div class="card-content">
                     <h3 class="card-title" style="font-size:1rem;">Basic Course Building Modelling With Tekla Structure
@@ -712,7 +730,7 @@
             </div>
             <div class="tech-card">
                 <div class="card-img-box">
-                    <img src="l10.png" alt="Sertifikat">
+                    <img src="l10.png" alt="Sertifikat" style="cursor: pointer;" onclick="openLightbox(this)">
                 </div>
                 <div class="card-content">
                     <h3 class="card-title" style="font-size:1rem;">Magang Bersertifikat Kampus Merdeka Mendukung
@@ -722,7 +740,7 @@
             </div>
             <div class="tech-card">
                 <div class="card-img-box">
-                    <img src="l11.png" alt="Sertifikat">
+                    <img src="l11.png" alt="Sertifikat" style="cursor: pointer;" onclick="openLightbox(this)">
                 </div>
                 <div class="card-content">
                     <h3 class="card-title" style="font-size:1rem;">Magang sebagai bim engineer</h3>
@@ -732,7 +750,7 @@
             </div>
             <div class="tech-card">
                 <div class="card-img-box">
-                    <img src="l12.jpeg" alt="Sertifikat">
+                    <img src="l12.jpeg" alt="Sertifikat" style="cursor: pointer;" onclick="openLightbox(this)">
                 </div>
                 <div class="card-content">
                     <h3 class="card-title" style="font-size:1rem;">Revit: Optimize Your BIM Workflow</h3>
@@ -741,22 +759,24 @@
             </div>
             <div class="tech-card">
                 <div class="card-img-box">
-                    <img src="l13.jpeg" alt="Sertifikat">
+                    <img src="l13.jpeg" alt="Sertifikat" style="cursor: pointer;" onclick="openLightbox(this)">
                 </div>
                 <div class="card-content">
-                    <h3 class="card-title" style="font-size:1rem;">Cert Prep: AutoCAD Civil 3D Certified Professional</h3>
+                    <h3 class="card-title" style="font-size:1rem;">Cert Prep: AutoCAD Civil 3D Certified Professional
+                    </h3>
                     <p class="card-desc">LinkedIn - Learning</p>
                 </div>
             </div>
             <div class="tech-card">
                 <div class="card-img-box">
-                    <img src="l14.png" alt="Sertifikat">
+                    <img src="l14.png" alt="Sertifikat" style="cursor: pointer;" onclick="openLightbox(this)">
                 </div>
                 <div class="card-content">
-                    <h3 class="card-title" style="font-size:1rem;">Revit MEP Mechanical & Plumbing Certified Professional</h3>
+                    <h3 class="card-title" style="font-size:1rem;">Revit MEP Mechanical & Plumbing Certified
+                        Professional</h3>
                     <p class="card-desc">LinkedIn - Learning</p>
                 </div>
-            </div>            
+            </div>
         </div>
     </section>
 
@@ -768,17 +788,21 @@
         </h2>
 
         <ul class="list-pelatihan">
-            <li>Revit MEP Mechanical & Plumbing Certified Professional (16 Februari 2026)</li>            
-            <li>Civil 3D Certified Professional (13 Februari 2026)</li>             
-            <li>Revit: Optimize Your BIM Workflow (13 Februari 2026)</li>           
-            <li>Mahir Menggunakan Autodesk Civil 3D Untuk Desain Infrastuktur Jalan by Creative Station (27 Agustus 2023)</li>
-            <li>Pelatihan Manajemen Proyek Menggunakan Aplikasi Primavera by CV. Ananta Education (14 -15 Januari 2023)</li>
-            <li>Manajemen Proyek Konstruksi Bangunan Rumah Menggunakan Primavera P6 by Creative Station (31 Mei 2023)</li>
+            <li>Revit MEP Mechanical & Plumbing Certified Professional (16 Februari 2026)</li>
+            <li>Civil 3D Certified Professional (13 Februari 2026)</li>
+            <li>Revit: Optimize Your BIM Workflow (13 Februari 2026)</li>
+            <li>Mahir Menggunakan Autodesk Civil 3D Untuk Desain Infrastuktur Jalan by Creative Station (27 Agustus
+                2023)</li>
+            <li>Pelatihan Manajemen Proyek Menggunakan Aplikasi Primavera by CV. Ananta Education (14 -15 Januari 2023)
+            </li>
+            <li>Manajemen Proyek Konstruksi Bangunan Rumah Menggunakan Primavera P6 by Creative Station (31 Mei 2023)
+            </li>
             <li>Revit Beginner to Advance by PT. Multisarana Teknik (16 Febuari – 30 Juni 2023)</li>
             <li>Pelatihan BIM Pekan Ilmiah & Kongres V IMTSI Cabang DKI Jakarta (Februari 2021)</li>
             <li>Pelatihan Autocad 2D (4 January 2021)</li>
             <li>Pembekalan Persiapan Dunia Kerja (5 November 2019)</li>
-            <li>Resource Management Optimasi Analisa Harga Satuan dan Material dalam Pembuatan RAB Menggunakan Estimator.id (8 Mei 2023)</li>
+            <li>Resource Management Optimasi Analisa Harga Satuan dan Material dalam Pembuatan RAB Menggunakan
+                Estimator.id (8 Mei 2023)</li>
             <li>Konsep Menyusun Estimasi Rab Proyek Infrastruktur Jalan (19 Februari 2021)</li>
             <li>Digital Engineering Collaboration in BIM Ecosystem (20 Februari - 20 Mei 2023)</li>
             <li>Pelaksana Pemeliharaan Jalan – Lembaga Pengembangan Jasa Konstruksi (27 September 2024)</li>
@@ -791,7 +815,8 @@
         <div class="grid-3">
             <div class="tech-card">
                 <div class="card-img-box">
-                    <img src="p1.png" style="object-fit:contain; padding:30px;" alt="Award">
+                    <img src="p1.png" style="object-fit:contain; padding:30px; cursor: pointer;" alt="Award"
+                        onclick="openLightbox(this)">
                 </div>
                 <div class="card-content">
                     <h3 class="card-title">Lulusan Terbaik Fakultas Teknik Periode Juni 2024</h3>
@@ -825,11 +850,12 @@
     </section>
 
     <section id="publications" ; background: var(--bg-core);">
-        
-        <h2 style="color: #fff; font-size: 2.2rem; margin-bottom: 40px; text-align: left; border-left: 5px solid var(--cyan-neon); padding-left: 15px;">
+
+        <h2
+            style="color: #fff; font-size: 2.2rem; margin-bottom: 40px; text-align: left; border-left: 5px solid var(--cyan-neon); padding-left: 15px;">
             PUBLIKASI JURNAL
         </h2>
-        
+
         <div class="grid-3">
 
             <div class="tech-card">
@@ -837,9 +863,11 @@
                     <img src="j1.png" alt="Cover Jurnal 1">
                 </div>
                 <div class="card-content" style="justify-content: space-between;">
-                    <h3 class="card-title">APPLICATION OF BUILDING INFORMATION MODELING 3D, 4D, AND 5D IN THE DESIGN PLANNING OF IHM DOCK ACCESS ROAD</h3>
-                    
-                    <a href="https://ejournal.unisnu.ac.id/JDPT/article/view/7065" target="_blank" style="color: var(--cyan-neon); text-decoration: none; font-size: 0.9rem; margin-top: 15px; display: inline-block; font-weight: bold;">
+                    <h3 class="card-title">APPLICATION OF BUILDING INFORMATION MODELING 3D, 4D, AND 5D IN THE DESIGN
+                        PLANNING OF IHM DOCK ACCESS ROAD</h3>
+
+                    <a href="https://ejournal.unisnu.ac.id/JDPT/article/view/7065" target="_blank"
+                        style="color: var(--cyan-neon); text-decoration: none; font-size: 0.9rem; margin-top: 15px; display: inline-block; font-weight: bold;">
                         BACA JURNAL <i class="fas fa-arrow-right" style="margin-left: 5px;"></i>
                     </a>
                 </div>
@@ -851,8 +879,9 @@
                 </div>
                 <div class="card-content" style="justify-content: space-between;">
                     <h3 class="card-title">Penerapan Waste Management pada Proyek Perumahan</h3>
-                    
-                    <a href="https://e-jurnal.pnl.ac.id/portal/article/view/5772" target="_blank" style="color: var(--cyan-neon); text-decoration: none; font-size: 0.9rem; margin-top: 15px; display: inline-block; font-weight: bold;">
+
+                    <a href="https://e-jurnal.pnl.ac.id/portal/article/view/5772" target="_blank"
+                        style="color: var(--cyan-neon); text-decoration: none; font-size: 0.9rem; margin-top: 15px; display: inline-block; font-weight: bold;">
                         BACA JURNAL <i class="fas fa-arrow-right" style="margin-left: 5px;"></i>
                     </a>
                 </div>
@@ -863,9 +892,11 @@
                     <img src="j3.png" alt="Cover Jurnal 3">
                 </div>
                 <div class="card-content" style="justify-content: space-between;">
-                    <h3 class="card-title">Redesain Jalan Akses Dermaga IHM Dengan Implementasi Building Information Modelling</h3>
-                    
-                    <a href="https://e-journal.upr.ac.id/index.php/basement/article/view/12715" target="_blank" style="color: var(--cyan-neon); text-decoration: none; font-size: 0.9rem; margin-top: 15px; display: inline-block; font-weight: bold;">
+                    <h3 class="card-title">Redesain Jalan Akses Dermaga IHM Dengan Implementasi Building Information
+                        Modelling</h3>
+
+                    <a href="https://e-journal.upr.ac.id/index.php/basement/article/view/12715" target="_blank"
+                        style="color: var(--cyan-neon); text-decoration: none; font-size: 0.9rem; margin-top: 15px; display: inline-block; font-weight: bold;">
                         BACA JURNAL <i class="fas fa-arrow-right" style="margin-left: 5px;"></i>
                     </a>
                 </div>
@@ -896,78 +927,95 @@
         </h4>
         <div class="social-grid" style="margin-top: 0;">
             <a href="https://www.x.com/anzvest" class="social-btn" title="Twitter"><i class="fab fa-twitter"></i></a>
-            <a href="https://www.instagram.com/wardanni_/" class="social-btn" title="Instagram"><i class="fab fa-instagram"></i></a>
-            <a href="https://www.youtube.com/@BIMBorneo" class="social-btn" title="YouTube"><i class="fab fa-youtube"></i></a>
-            <a href="https://www.tiktok.com/@bimborneo" class="social-btn" title="TikTok"><i class="fab fa-tiktok"></i></a>
+            <a href="https://www.instagram.com/wardanni_/" class="social-btn" title="Instagram"><i
+                    class="fab fa-instagram"></i></a>
+            <a href="https://www.youtube.com/@BIMBorneo" class="social-btn" title="YouTube"><i
+                    class="fab fa-youtube"></i></a>
+            <a href="https://www.tiktok.com/@bimborneo" class="social-btn" title="TikTok"><i
+                    class="fab fa-tiktok"></i></a>
         </div>
 
         <footer class="footer-section">
-        <div class="footer-content">
-            <p>&copy; <span id="current-year"></span> <strong>Muhammad Wardani | BIM Borneo</strong>. All Rights Reserved.</p>
-            <p class="disclaimer">
-                Seluruh konten website, termasuk pemodelan 3D, hasil olah data LiDAR, dan dokumentasi drone adalah hak kekayaan intelektual kreator. Dilarang keras menyalin, mereproduksi, atau menggunakan aset tanpa izin tertulis.
-            </p>
-        </div>
-    </footer>
+            <div class="footer-content">
+                <p>&copy; <span id="current-year"></span> <strong>Muhammad Wardani | BIM Borneo</strong>. All Rights
+                    Reserved.</p>
+                <p class="disclaimer">
+                    Seluruh konten website, termasuk pemodelan 3D, hasil olah data LiDAR, dan dokumentasi drone adalah
+                    hak kekayaan intelektual kreator. Dilarang keras menyalin, mereproduksi, atau menggunakan aset tanpa
+                    izin tertulis.
+                </p>
+            </div>
+            <div id="imageModal" class="modal-lightbox" onclick="closeLightbox()">
+                <span class="close-lightbox">&times;</span>
+                <img class="modal-lightbox-content" id="modalImageExpanded">
+            </div>
+        </footer>
 
-    <script>
-        document.getElementById('current-year').textContent = new Date().getFullYear();
-    </script>
+        <script>
+            document.getElementById('current-year').textContent = new Date().getFullYear();
+        </script>
 
-<script>
-        // 1. FUNGSI MENU MOBILE (HAMBURGER)
-        function toggleMenu() {
-            const navMenu = document.getElementById('navMenu');
-            if (navMenu) {
-                navMenu.classList.toggle('active');
-            }
-        }
-
-        // 2. FUNGSI DETAIL PENGALAMAN (ACCORDION)
-        function toggleDetail(element) {
-            // Mencari elemen pembungkus (timeline-item)
-            const item = element.closest('.timeline-item');
-            const content = item.querySelector('.detail-content');
-            
-            // Cek apakah item ini sudah aktif
-            const isActive = item.classList.contains('active');
-
-            // Tutup semua item lain agar rapi
-            document.querySelectorAll('.timeline-item').forEach(otherItem => {
-                otherItem.classList.remove('active');
-                const otherContent = otherItem.querySelector('.detail-content');
-                if (otherContent) otherContent.classList.remove('active');
-            });
-
-            // Jika sebelumnya tidak aktif, sekarang aktifkan
-            if (!isActive) {
-                item.classList.add('active');
-                content.classList.add('active');
-            }
-        }
-
-        // 3. TUTUP MENU OTOMATIS SAAT LINK DIKLIK
-        document.querySelectorAll('.nav-link').forEach(link => {
-            link.addEventListener('click', () => {
+        <script>
+            // 1. FUNGSI MENU MOBILE (HAMBURGER)
+            function toggleMenu() {
                 const navMenu = document.getElementById('navMenu');
-                if (navMenu) navMenu.classList.remove('active');
+                if (navMenu) {
+                    navMenu.classList.toggle('active');
+                }
+            }
+
+            // 2. FUNGSI DETAIL PENGALAMAN (ACCORDION)
+            function toggleDetail(element) {
+                // Mencari elemen pembungkus (timeline-item)
+                const item = element.closest('.timeline-item');
+                const content = item.querySelector('.detail-content');
+
+                // Cek apakah item ini sudah aktif
+                const isActive = item.classList.contains('active');
+
+                // Tutup semua item lain agar rapi
+                document.querySelectorAll('.timeline-item').forEach(otherItem => {
+                    otherItem.classList.remove('active');
+                    const otherContent = otherItem.querySelector('.detail-content');
+                    if (otherContent) otherContent.classList.remove('active');
+                });
+
+                // Jika sebelumnya tidak aktif, sekarang aktifkan
+                if (!isActive) {
+                    item.classList.add('active');
+                    content.classList.add('active');
+                }
+            }
+
+            // 3. TUTUP MENU OTOMATIS SAAT LINK DIKLIK
+            document.querySelectorAll('.nav-link').forEach(link => {
+                link.addEventListener('click', () => {
+                    const navMenu = document.getElementById('navMenu');
+                    if (navMenu) navMenu.classList.remove('active');
+                });
             });
-        });
-    </script>
+
+            // 4. LIGHTBOX (ZOOM Picture)
+            function openLightbox(element) {
+                const modal = document.getElementById('imageModal');
+                const modalImg = document.getElementById('modalImageExpanded');
+
+                modal.style.display = "flex";
+                modalImg.src = element.src;
+            }
+
+            function closeLightbox() {
+                document.getElementById('imageModal').style.display = "none";
+            }
+        </script>
+
+        <div id="imageModal" class="modal-lightbox" onclick="closeLightbox()">
+            <span class="close-lightbox">&times;</span>
+            <img class="modal-lightbox-content" id="modalImageExpanded">
+        </div>
+
+        </script>
 
 </body>
+
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-

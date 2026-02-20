@@ -1102,125 +1102,260 @@
                 grid-template-columns: 1fr;
             }
         }
+
         /* =========================================
    DAFTAR KURSUS & PELATIHAN (SIMPLE BULLET)
    ========================================= */
 
-/* Menggeser posisi list ke samping kanan */
-.list-pelatihan {
-    list-style: none; 
-    padding-left: 40px; /* KUNCI: Naikkan angka ini (misal 40px atau 60px) untuk menggeser peluru ke kanan */
-    margin-top: 30px;
-    margin-bottom: 30px;
-    max-width: 800px;
-    
-    /* Opsional: Jika Mas ingin seluruh blok ini posisinya pas di TENGAH layar, hapus tanda komentar pada baris di bawah ini */
-    /* margin-left: auto; margin-right: auto; */
-}
+        /* Menggeser posisi list ke samping kanan */
+        .list-pelatihan {
+            list-style: none;
+            padding-left: 40px;
+            /* KUNCI: Naikkan angka ini (misal 40px atau 60px) untuk menggeser peluru ke kanan */
+            margin-top: 30px;
+            margin-bottom: 30px;
+            max-width: 800px;
 
-.list-pelatihan li {
-    position: relative;
-    color: #ccc; /* Warna teks abu-abu terang */
-    font-size: 1.05rem;
-    line-height: 1.6;
-    margin-bottom: 18px; /* Jarak antar baris pelatihan */
-    padding-left: 28px; /* Memberi ruang di sebelah kiri untuk titik bulat */
-    transition: color 0.3s ease;
-}
+            /* Opsional: Jika Mas ingin seluruh blok ini posisinya pas di TENGAH layar, hapus tanda komentar pada baris di bawah ini */
+            /* margin-left: auto; margin-right: auto; */
+        }
 
-/* Teks menjadi putih terang saat disorot mouse */
-.list-pelatihan li:hover {
-    color: #fff;
-}
+        .list-pelatihan li {
+            position: relative;
+            color: #ccc;
+            /* Warna teks abu-abu terang */
+            font-size: 1.05rem;
+            line-height: 1.6;
+            margin-bottom: 18px;
+            /* Jarak antar baris pelatihan */
+            padding-left: 28px;
+            /* Memberi ruang di sebelah kiri untuk titik bulat */
+            transition: color 0.3s ease;
+        }
 
-/* Membuat titik bulat kustom bergaya Cyberpunk/Neon */
-.list-pelatihan li::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 8px; /* Menyejajarkan titik vertikal dengan teks */
-    width: 8px; /* Ukuran titik bulat */
-    height: 8px;
-    background-color: var(--cyan-neon);
-    border-radius: 50%; /* Memaksa bentuk menjadi bulat sempurna */
-    box-shadow: 0 0 8px var(--cyan-neon); /* Efek cahaya neon di sekitar titik */
-}
-/* =========================================
+        /* Teks menjadi putih terang saat disorot mouse */
+        .list-pelatihan li:hover {
+            color: #fff;
+        }
+
+        /* Membuat titik bulat kustom bergaya Cyberpunk/Neon */
+        .list-pelatihan li::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 8px;
+            /* Menyejajarkan titik vertikal dengan teks */
+            width: 8px;
+            /* Ukuran titik bulat */
+            height: 8px;
+            background-color: var(--cyan-neon);
+            border-radius: 50%;
+            /* Memaksa bentuk menjadi bulat sempurna */
+            box-shadow: 0 0 8px var(--cyan-neon);
+            /* Efek cahaya neon di sekitar titik */
+        }
+
+        /* =========================================
    WADAH KHUSUS COVER JURNAL (TIDAK TER-CROP)
    ========================================= */
 
-.jurnal-img-box {
-    width: 100%;
-    /* Tinggi dibuat sedikit lebih besar karena jurnal bentuknya berdiri */
-    height: 280px; 
-    background: #0a0a0a; /* Background gelap untuk mengisi ruang kosong */
-    position: relative;
-    overflow: hidden;
-    flex-shrink: 0;
-    display: flex; /* Membantu menengahkan gambar */
-    justify-content: center;
-    align-items: center;
-    padding: 15px; /* Memberi jarak agar cover tidak menempel ke garis tepi */
-}
+        .jurnal-img-box {
+            width: 100%;
+            /* Tinggi dibuat sedikit lebih besar karena jurnal bentuknya berdiri */
+            height: 280px;
+            background: #0a0a0a;
+            /* Background gelap untuk mengisi ruang kosong */
+            position: relative;
+            overflow: hidden;
+            flex-shrink: 0;
+            display: flex;
+            /* Membantu menengahkan gambar */
+            justify-content: center;
+            align-items: center;
+            padding: 15px;
+            /* Memberi jarak agar cover tidak menempel ke garis tepi */
+        }
 
-.jurnal-img-box img {
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: contain !important; /* KUNCI: Menampilkan gambar utuh tanpa dipotong */
-    border-radius: 4px; /* Sedikit melengkungkan ujung cover jurnal agar manis */
-    box-shadow: 0 5px 15px rgba(0,0,0,0.5); /* Efek bayangan kertas */
-    transition: transform 0.5s ease;
-}
+        .jurnal-img-box img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain !important;
+            /* KUNCI: Menampilkan gambar utuh tanpa dipotong */
+            border-radius: 4px;
+            /* Sedikit melengkungkan ujung cover jurnal agar manis */
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+            /* Efek bayangan kertas */
+            transition: transform 0.5s ease;
+        }
 
-/* Efek zoom saat kartu jurnal disentuh */
-.tech-card:hover .jurnal-img-box img {
-    transform: scale(1.05);
+        /* Efek zoom saat kartu jurnal disentuh */
+        .tech-card:hover .jurnal-img-box img {
+            transform: scale(1.05);
 
-}
-/* =========================================
+        }
+
+        /* =========================================
    FOOTER & COPYRIGHT (PERLINDUNGAN ASET)
    ========================================= */
 
-.footer-section {
-    background-color: #020202; /* Warna latar sangat gelap */
-    border-top: 1px solid #222; /* Garis pemisah halus di atas footer */
-    padding: 40px 20px;
-    text-align: center;
-    margin-top: 60px; /* Jarak dari konten di atasnya */
-}
+        .footer-section {
+            background-color: #020202;
+            /* Warna latar sangat gelap */
+            border-top: 1px solid #222;
+            /* Garis pemisah halus di atas footer */
+            padding: 40px 20px;
+            text-align: center;
+            margin-top: 60px;
+            /* Jarak dari konten di atasnya */
+        }
 
-.footer-content p {
-    color: #ccc;
-    font-size: 1rem;
-    margin-bottom: 12px;
-    letter-spacing: 0.5px;
-}
+        .footer-content p {
+            color: #ccc;
+            font-size: 1rem;
+            margin-bottom: 12px;
+            letter-spacing: 0.5px;
+        }
 
-/* Mengubah warna nama Mas menjadi Cyan Neon */
-.footer-content p strong {
-    color: var(--cyan-neon); 
-}
+        /* Mengubah warna nama Mas menjadi Cyan Neon */
+        .footer-content p strong {
+            color: var(--cyan-neon);
+        }
 
-/* Format teks peringatan (Disclaimer) yang lebih kecil dan redup */
-.footer-content .disclaimer {
-    color: #666;
-    font-size: 0.85rem;
-    max-width: 700px;
-    margin: 0 auto; /* Memastikan teks tetap di tengah */
-    line-height: 1.6;
-}
-/* Pastikan judul pengalaman berada di lapisan depan agar bisa diklik */
-.timeline-header {
-    position: relative;
-    z-index: 10;
-    cursor: pointer !important;
-}
+        /* Format teks peringatan (Disclaimer) yang lebih kecil dan redup */
+        .footer-content .disclaimer {
+            color: #666;
+            font-size: 0.85rem;
+            max-width: 700px;
+            margin: 0 auto;
+            /* Memastikan teks tetap di tengah */
+            line-height: 1.6;
+        }
 
-/* Kunci utama agar konten muncul saat class active menyala */
-.detail-content.active {
-    max-height: 2000px !important; /* Nilai besar agar semua teks muat */
-    opacity: 1 !important;
-    visibility: visible !important;
-    display: block !important;
-    padding: 20px;
-}
+        /* Pastikan judul pengalaman berada di lapisan depan agar bisa diklik */
+        .timeline-header {
+            position: relative;
+            z-index: 10;
+            cursor: pointer !important;
+        }
+
+        /* Kunci utama agar konten muncul saat class active menyala */
+        .detail-content.active {
+            max-height: 2000px !important;
+            /* Nilai besar agar semua teks muat */
+            opacity: 1 !important;
+            visibility: visible !important;
+            display: block !important;
+            padding: 20px;
+        }
+
+        /* Gaya untuk pembungkus tombol bahasa */
+        .language-switcher {
+            display: inline-flex;
+            align-items: center;
+            margin-right: 20px;
+            /* Jarak antara teks EN dengan tombol Kontak */
+            font-weight: 600;
+            font-size: 14px;
+            letter-spacing: 1px;
+        }
+
+        /* Gaya default untuk teks ID dan EN */
+        .language-switcher a {
+            text-decoration: none;
+            color: #666;
+            /* Warna abu-abu redup untuk bahasa yang tidak aktif */
+            transition: color 0.3s ease;
+            padding: 0 5px;
+        }
+
+        /* Efek menyala saat disorot mouse */
+        .language-switcher a:hover {
+            color: #00e5ff;
+            /* Warna cyan/biru neon khas BIM Borneo */
+        }
+
+        /* Gaya untuk bahasa yang sedang menyala/aktif */
+        .language-switcher a.active {
+            color: #ffffff;
+            /* Warna putih terang */
+            pointer-events: none;
+            /* Supaya yang sudah aktif tidak bisa diklik lagi */
+        }
+
+        /* Gaya untuk garis pemisah | */
+        .language-switcher .divider {
+            color: #444;
+            margin: 0 4px;
+        }
+
+        /* =========================================
+   LIGHTBOX MODAL (ZOOM GAMBAR)
+========================================= */
+
+        .modal-lightbox {
+            display: none;
+            /* Akan diubah jadi 'flex' oleh JavaScript */
+            position: fixed;
+            z-index: 9999;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.9);
+            backdrop-filter: blur(5px);
+            /* 3 Baris ini adalah keajaiban Flexbox untuk menengahkan elemen */
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .modal-lightbox-content {
+            /* Hapus margin: auto dan ganti dengan ini */
+            max-width: 90%;
+            max-height: 85vh;
+            border-radius: 8px;
+            box-shadow: 0 0 25px rgba(0, 229, 255, 0.3);
+            animation: zoomIn 0.3s ease;
+        }
+
+        /* Tombol Close (X) */
+        .close-lightbox {
+            position: absolute;
+            top: 20px;
+            right: 40px;
+            color: #fff;
+            font-size: 40px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .close-lightbox:hover {
+            color: var(--cyan-neon, #00e5ff);
+        }
+
+        /* Animasi Muncul */
+        @keyframes zoomIn {
+            from {
+                transform: scale(0.8);
+                opacity: 0;
+            }
+
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        /* Efek kursor tangan di gambar sertifikat agar tahu bisa diklik */
+        .card-img-box img,
+        .jurnal-img-box img {
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .card-img-box img:hover,
+        .jurnal-img-box img:hover {
+            transform: scale(1.05);
+            /* Gambar sedikit membesar saat disentuh mouse */
+        }

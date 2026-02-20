@@ -1,0 +1,999 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8LE0PK6CYN"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-8LE0PK6CYN');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammad Wardani | BIM & GIS Specialist</title>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Rajdhani:wght@500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="bg-infrastructure"></div>
+    <header>
+        <div class="logo">
+            <div class="logo-area">
+
+                <img src="logo.png" alt="Logo" style="height: 45px; width: auto;">
+
+                <div class="text-slider">
+
+                    <div class="text-group group-1">
+                        <span
+                            style="font-family: 'Montserrat', sans-serif; font-weight: 900; font-size: 1.5rem; color: #fff; letter-spacing: 1px;">
+                            BIM <span style="color: var(--cyan-neon);">BORNEO</span>
+                        </span>
+                        <span
+                            style="font-family: 'Montserrat', sans-serif; font-weight: 400; font-size: 0.6rem; color: #ccc; letter-spacing: 3px;">
+                            DIGITAL CONSTRUCTION
+                        </span>
+                    </div>
+
+                    <div class="text-group group-2">
+                        <span
+                            style="font-family: 'Montserrat', sans-serif; font-weight: 400; font-size: 0.6rem; color: #888; letter-spacing: 2px;">
+                            CREATED BY
+                        </span>
+                        <span
+                            style="font-family: 'Rajdhani', sans-serif; font-weight: 700; font-size: 1.2rem; color: var(--cyan-neon); letter-spacing: 1px; text-transform: uppercase;">
+                            MUHAMMAD WARDANI
+                        </span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-toggle" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
+        </div>
+
+        <nav class="nav-menu" id="navMenu">
+            <a href="#about" class="nav-link" onclick="toggleMenu()">About</a>
+            <a href="#experience" class="nav-link" onclick="toggleMenu()">Experience</a>
+            <a href="#portfolio" class="nav-link" onclick="toggleMenu()">Portfolio</a>
+            <a href="#skills" class="nav-link" onclick="toggleMenu()">Skills</a>
+            <a href="#education" class="nav-link" onclick="toggleMenu()">Education</a>
+            <a href="#certifications" class="nav-link" onclick="toggleMenu()">Certifications</a>
+            <a href="#courses" class="nav-link" onclick="toggleMenu()">Courses</a>
+            <a href="#honors" class="nav-link" onclick="toggleMenu()">Honors</a>
+            <a href="#patents" class="nav-link" onclick="toggleMenu()">Patents</a>
+            <a href="#publications" class="nav-link" onclick="toggleMenu()">Publications</a>
+
+            <a href="#contact" class="nav-link kontak-desktop"
+                style="color: var(--cyan-neon); border: 1px solid var(--cyan-neon); padding: 5px 10px; border-radius: 4px; margin-right: 15px;"
+                onclick="toggleMenu()">Contact</a>
+
+            <div class="language-switcher" style="display: inline-flex; align-items: center; gap: 10px;">
+                <a href="index.html" title="Bahasa Indonesia"
+                    style="opacity: 0.4; transition: opacity 0.3s ease; display: flex;"
+                    onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.4'">
+                    <img src="https://flagcdn.com/w40/id.png" alt="ID" style="width: 26px; border-radius: 3px;">
+                </a>
+
+                <a href="index_en.html" title="English"
+                    style="opacity: 1; transition: opacity 0.3s ease; display: flex;">
+                    <img src="https://flagcdn.com/w40/gb.png" alt="EN" style="width: 26px; border-radius: 3px;">
+                </a>
+            </div>
+
+            <div class="mobile-contact-area">
+
+                <p class="menu-label">CONTACT</p>
+                <div class="nav-social-icons">
+                    <a href="https://wa.me/6285157564588" class="nav-icon" title="WhatsApp"><i
+                            class="fab fa-whatsapp"></i></a>
+                    <a href="mailto:wardanidani208@gmail.com" class="nav-icon" title="Email"><i
+                            class="fas fa-envelope"></i></a>
+                    <a href="https://www.linkedin.com/in/m-wardani/" class="nav-icon" title="LinkedIn"><i
+                            class="fab fa-linkedin-in"></i></a>
+                    <a href="https://fastwork.id/user/bimborneo" target="_blank" class="nav-icon" title="Fastwork">
+                        <img src="logofastwork.png" alt="Fastwork" class="fw-logo">
+                    </a>
+                </div>
+
+                <p class="menu-label" style="margin-top: 25px;">SOCIAL MEDIA</p>
+                <div class="nav-social-icons">
+                    <a href="https://www.x.com/anzvest" class="nav-icon" title="Twitter"><i
+                            class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/wardanni_/" class="nav-icon" title="Instagram"><i
+                            class="fab fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/@BIMBorneo" class="nav-icon" title="YouTube"><i
+                            class="fab fa-youtube"></i></a>
+                    <a href="https://www.tiktok.com/@bimborneo" class="nav-icon" title="TikTok"><i
+                            class="fab fa-tiktok"></i></a>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div>
+            <div class="hero-badge" style="margin-bottom: 20px;">
+                <i class="fas fa-microchip"></i> ENGINEERING 5.0
+            </div>
+
+            <h1 style="line-height: 0.9; margin-bottom: 20px;">
+                <span
+                    style="display: block; font-family: 'Rajdhani', sans-serif; font-weight: 600; font-size: 1.5rem; color: #888; letter-spacing: 5px; margin-bottom: 5px;">
+                    THE NEXT GEN OF
+                </span>
+
+                <span
+                    style="font-family: 'Montserrat', sans-serif; font-weight: 900; font-size: 4.5rem; color: #fff; letter-spacing: -2px; text-shadow: 0 0 30px rgba(0, 243, 255, 0.2);">
+                    DIGITAL
+                </span>
+                <br>
+                <span
+                    style="font-family: 'Montserrat', sans-serif; font-weight: 900; font-size: 4.5rem; color: var(--cyan-neon); letter-spacing: -2px;">
+                    CONSTRUCTION
+                </span>
+            </h1>
+
+            <h2
+                style="font-family: 'Rajdhani', sans-serif; font-size: 1.2rem; color: #ccc; letter-spacing: 1px; font-weight: 500; margin-bottom: 40px; max-width: 800px; margin-left: auto; margin-right: auto; line-height: 1;">
+                Bridging Reality with <br>
+
+                <span style="color: #fff; border-top: 0px solid var(--cyan-neon); font-size: 1.4rem; font-weight: 700;">
+                    Building Information Modelling (BIM) 3D, 4D, & 5D
+                </span>
+
+                <br> & <br>
+
+                <span
+                    style="color: #fff; border-bottom: 0px solid var(--cyan-neon); font-size: 1.4rem; font-weight: 700;">
+                    GEOGRAPHIC INFORMATION SYSTEM (GIS)
+                </span>
+            </h2>
+
+            <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
+                <a href="#portfolio" class="social-btn"
+                    style="width:auto; padding: 12px 35px; border-radius: 50px; font-weight: bold; letter-spacing: 1px;">
+                    EXPLORE PORTFOLIO
+                </a>
+                <a href="#contact" class="social-btn"
+                    style="width:auto; padding: 12px 35px; border-radius: 50px; background:transparent; border: 1px solid #333; color: #fff;">
+                    CONTACT ME
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2 class="section-title scroll-animate">About Me</h2>
+
+        <div class="about-grid scroll-animate">
+            <div class="about-image-box">
+                <img src="mwardani.jpg" alt="Muhammad Wardani" style="cursor: pointer;" onclick="openLightbox(this)">
+            </div>
+            <div class="about-text">
+                <h2
+                    style="font-family: 'Rajdhani', sans-serif; font-size: 2.2rem; font-weight: 700; color: #fff; margin-bottom: 5px; line-height: 1.2;">
+                    MUHAMMAD WARDANI </span>
+                </h2>
+
+                <h3 style="color: var(--cyan-neon); margin-bottom: 20px; font-size: 1.1rem; letter-spacing: 1px;">
+                    bachelor of civil engineering | GPA 3.92
+                </h3>
+
+                <p style="color: #ccc; line-height: 1.8; margin-bottom: 15px;">
+                    As a Civil Engineering graduate focusing on digital construction innovation, I possess in-depth
+                    expertise in the implementation of Building Information Modeling (BIM) 3D, 4D, and 5D. I am highly
+                    proficient in optimizing project efficiency using various cutting-edge modeling and project
+                    management software. In addition to my digital capabilities, I also have strong technical competence
+                    in reviewing and designing highway geometry in accordance with applicable engineering standards.
+                </p>
+                <p style="color: #ccc; line-height: 1.8;">
+                    My main focus is on digitizing physical construction into integrated data (BIM 3D, 4D, 5D) and
+                    conducting spatial analysis (GIS) using LiDAR and Drone technologies.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience">
+        <h2 class="section-title">Professional Experience</h2>
+        <div class="timeline-box">
+
+            <div class="timeline-item scroll-animate">
+                <span class="timeline-date">April - December 2025</span>
+                <div class="timeline-header" onclick="toggleDetail(this)">
+                    <div class="header-text">
+                        <h3 class="timeline-role">REGULAR CORE TEAM 01</h3>
+                        <p class="timeline-loc">Ministry of Public Works - P2JN Task Force of East Kalimantan</p>
+                    </div>
+                    <i class="fas fa-chevron-down toggle-icon"></i>
+                </div>
+
+                <div class="detail-content">
+                    <ul>
+                        <li>Created BIM models and extracted bar bending schedules for pile cap works, according to
+                            standard drawing guidelines provided by the geotechnical engineer.</li>
+                        <li>Processed Drone Topographic Data in landslide areas.</li>
+                        <li>Processed LiDAR Point Cloud Data (Classification & Filtering).</li>
+                        <li>Processed Aerial Orthophoto/Photogrammetry data.</li>
+                        <li>Generated drone LiDAR topographic data reports.</li>
+                        <li>Assisted the Assistant Highway Engineer in drafting rigid pavement design procedures in
+                            accordance with the 2024 MDP Guidelines.</li>
+                        <li>Provided training and instruction on Civil 3D operation to the Assistant Highway Engineer.
+                        </li>
+                        <li>Assisted the Structural Engineer in producing Detail Engineering Design (DED) drawings for
+                            periodic bridge maintenance.</li>
+                        <li>Created presentation materials as directed by the Head of the P2JN Task Force.</li>
+                        <li>Reviewed DED drawing assistance for Box Culvert works.</li>
+                        <li>Created BIM Models to extract bar bending schedules and rebar volume requirements for Box
+                            Culverts.</li>
+                        <li>Created Alignment Maps and Inventory for National Border Road Bridges using ArcGIS.</li>
+                        <li>Generated Aerial Photo Maps and Digital Terrain Models (DTM) for road landslide areas.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="timeline-item scroll-animate">
+                <span class="timeline-date">June - August 2025</span>
+                <div class="timeline-header" onclick="toggleDetail(this)">
+                    <div class="header-text">
+                        <h3 class="timeline-role">BIM ENGINEER FOR THE PLANNING PROJECT OF 4 AGENCY BUILDINGS IN BERAU,
+                            EAST KALIMANTAN</h3>
+                        <p class="timeline-loc">Freelance</p>
+                    </div>
+                    <i class="fas fa-chevron-down toggle-icon"></i>
+                </div>
+
+                <div class="detail-content">
+                    <ul>
+                        <li>Designed Structural Conceptual Details.</li>
+                        <li>Created Detailed 3D BIM Structural Models.</li>
+                        <li>Designed Detailed Plumbing Plans.</li>
+                        <li>Created Detailed 3D BIM Plumbing Models.</li>
+                        <li>Extracted Quantity Take-Off (QTO) for Structural & Plumbing works.</li>
+                        <li>Produced Detail Engineering Design (DED) drawings for Structure & Plumbing.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="timeline-item scroll-animate">
+                <span class="timeline-date">January 2025</span>
+                <div class="timeline-header" onclick="toggleDetail(this)">
+                    <div class="header-text">
+                        <h3 class="timeline-role">BIM ENGINEER FOR JBH SECTION 6A CONSTRUCTION PROJECT, IKN, PENAJAM
+                            PASER UTARA, EAST KALIMANTAN</h3>
+                        <p class="timeline-loc">Freelance</p>
+                    </div>
+                    <i class="fas fa-chevron-down toggle-icon"></i>
+                </div>
+
+                <div class="detail-content">
+                    <ul>
+                        <li>Integrated 3D Models with Scheduling (4D BIM) for S. Karnaen Bridge works at STA 1+500 using
+                            Autodesk Navisworks Manage.</li>
+                        <li>Integrated 3D Models with Scheduling (4D BIM) for SOP works at STA 1+150 using Autodesk
+                            Navisworks Manage.</li>
+                        <li>Integrated 3D Models with Scheduling (4D BIM) for SOP works at STA 2+514 using Autodesk
+                            Navisworks Manage.</li>
+                        <li>Integrated 3D Models with Scheduling (4D BIM) for SOP works at STA 5+000 using Autodesk
+                            Navisworks Manage.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="timeline-item scroll-animate">
+                <span class="timeline-date">February - March 2024</span>
+                <div class="timeline-header" onclick="toggleDetail(this)">
+                    <div class="header-text">
+                        <h3 class="timeline-role">BIM ENGINEER FOR THE HEALTH AGENCY (DINKES) BUILDING PLANNING PROJECT
+                            IN BERAU, EAST KALIMANTAN</h3>
+                        <p class="timeline-loc">Freelance</p>
+                    </div>
+                    <i class="fas fa-chevron-down toggle-icon"></i>
+                </div>
+
+                <div class="detail-content">
+                    <ul>
+                        <li>Created Solid 3D BIM Structural Models.</li>
+                        <li>Created Solid 3D BIM Architectural Models.</li>
+                        <li>Developed Structural BIM Detailing (LoD 400).</li>
+                        <li>Developed Architectural BIM Detailing.</li>
+                        <li>Extracted Quantity Take-Off for structural works in accordance with the Work Unit Price
+                            Analysis (AHSP).</li>
+                        <li>Generated Bar Bending Schedules.</li>
+                        <li>Produced Detail Engineering Design drawings.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="timeline-item scroll-animate">
+                <span class="timeline-date">January 2024</span>
+                <div class="timeline-header" onclick="toggleDetail(this)">
+                    <div class="header-text">
+                        <h3 class="timeline-role">BIM ENGINEER FOR THE PEKANBARU ROAD PLANNING PROJECT, RIAU</h3>
+                        <p class="timeline-loc">Freelance</p>
+                    </div>
+                    <i class="fas fa-chevron-down toggle-icon"></i>
+                </div>
+
+                <div class="detail-content">
+                    <ul>
+                        <li>Exported Civil 3D BIM models to Infraworks and corrected BIM model coordinates for Road 1
+                            planning.</li>
+                        <li>Exported Civil 3D BIM models to Infraworks and corrected BIM model coordinates for Road 2
+                            planning.</li>
+                        <li>Exported Civil 3D BIM models to Infraworks and corrected BIM model coordinates for Road 3
+                            planning.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="timeline-item scroll-animate">
+                <span class="timeline-date">April 2024</span>
+                <div class="timeline-header" onclick="toggleDetail(this)">
+                    <div class="header-text">
+                        <h3 class="timeline-role">BIM ENGINEER FOR STUDENT FINAL PROJECT: CASE STUDY OF FT KOLAKA
+                            PIPELINE UPSIZING PROJECT</h3>
+                        <p class="timeline-loc">Freelance</p>
+                    </div>
+                    <i class="fas fa-chevron-down toggle-icon"></i>
+                </div>
+
+                <div class="detail-content">
+                    <ul>
+                        <li>Integrated 3D Models with Scheduling (4D BIM) for Civil and Demolition works.</li>
+                        <li>Integrated 3D Models with Scheduling (4D BIM) for the 8" Pertalite Pipeline works.</li>
+                        <li>Integrated 3D Models with Scheduling (4D BIM) for the 8" Pertamax Pipeline works.</li>
+                        <li>Integrated 3D Models with Scheduling (4D BIM) for the 8" Biosolar Pipeline works.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="timeline-item scroll-animate">
+                <span class="timeline-date">August - December 2023</span>
+                <div class="timeline-header" onclick="toggleDetail(this)">
+                    <div class="header-text">
+                        <h3 class="timeline-role">INTERNSHIP - BIM ENGINEER AT THE MINISTRY OF PUBLIC WORKS (PUPR) -
+                            P2JN EAST KALIMANTAN TO SUPPORT THE CONSTRUCTION OF NUSANTARA CAPITAL CITY (IKN)</h3>
+                        <p class="timeline-loc">Selected for MSIB Batch 5 Program - Nusantara Capital City (IKN)</p>
+                    </div>
+                    <i class="fas fa-chevron-down toggle-icon"></i>
+                </div>
+
+                <div class="detail-content">
+                    <ul>
+                        <li>Created BIM models for the Pier/Dock.</li>
+                        <li>Created BIM models for Closed Composite Steel Warehouse Buildings.</li>
+                        <li>Created BIM models for Open Steel Warehouse Buildings.</li>
+                        <li>Created BIM models for the Mosque/Prayer Room.</li>
+                        <li>Created BIM models for Road Infrastructure.</li>
+                        <li>Created BIM models for Office Buildings.</li>
+                        <li>Created BIM models for Road Complementary Structures.</li>
+                        <li>Created Site BIM models for the Pier Area.</li>
+                        <li>Developed all aforementioned BIM models to Level of Development (LoD) 400.</li>
+                        <li>Integrated all models based on real-world coordinates.</li>
+                        <li>Reviewed Detail Engineering Design drawings.</li>
+                        <li>Performed time integration (4D BIM) and cost integration (5D BIM) using Navisworks software.
+                        </li>
+                        <li>Assisted the Engineer in drafting road plans for KIPP IKN Road Planning.</li>
+                        <li>Assisted the Engineer in creating cross-sections for KIPP IKN Road Planning.</li>
+                        <li>Created Bridge BIM models at several stations for the Botanical Garden Planning (Behind the
+                            Presidential Palace).</li>
+                        <li>Created Typical Tunnel BIM models for the Botanical Garden Planning.</li>
+                        <li>Assisted the Engineer in collecting topographic data using a total station.</li>
+                        <li>Assisted the Engineer in collecting photogrammetry data using drones.</li>
+                        <li>Assisted the Engineer in surveying landslide and flood locations.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="timeline-item scroll-animate">
+                <span class="timeline-date">February - June 2023</span>
+                <div class="timeline-header" onclick="toggleDetail(this)">
+                    <div class="header-text">
+                        <h3 class="timeline-role">INDEPENDENT STUDY - BIM STRUCTURAL ENGINEER - AT PT. MANDUTAMA
+                            MULTISARANA TEKNIK</h3>
+                        <p class="timeline-loc">Selected for MSIB Batch 4 Program</p>
+                    </div>
+                    <i class="fas fa-chevron-down toggle-icon"></i>
+                </div>
+
+                <div class="detail-content">
+                    <ul>
+                        <li>Studied the implementation of Building Information Modeling (BIM) within the construction
+                            industry.</li>
+                        <li>Created conceptual building designs using the BIM methodology.</li>
+                        <li>Conducted structural building analysis.</li>
+                        <li>Produced Detail Engineering Design (DED) drawings using the BIM method.</li>
+                        <li>Generated Bill of Quantities (BoQ/RAB) using the BIM method.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="timeline-item scroll-animate">
+                <span class="timeline-date">December 2021</span>
+                <div class="timeline-header" onclick="toggleDetail(this)">
+                    <div class="header-text">
+                        <h3 class="timeline-role">OBSERVATION OF OCCUPATIONAL HEALTH AND SAFETY MANAGEMENT SYSTEM (SMK3)
+                            FOR ROAD AND BRIDGE PRESERVATION WORKS</h3>
+                        <p class="timeline-loc">TUMBANG SAMBA - RABAMBANG, CENTRAL KALIMANTAN</p>
+                    </div>
+                    <i class="fas fa-chevron-down toggle-icon"></i>
+                </div>
+
+                <div class="detail-content">
+                    <ul>
+                        <li>Observed aspects related to the implementation of the Occupational Health and Safety
+                            Management System (SMK3) for workers.</li>
+                        <li>Drafted observation reports on the SMK3 implementation.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="timeline-item scroll-animate">
+                <span class="timeline-date">Even Semester 2021/2022</span>
+                <div class="timeline-header" onclick="toggleDetail(this)">
+                    <div class="header-text">
+                        <h3 class="timeline-role">PARTICIPANT IN THE NUSANTARA STUDENT EXCHANGE PROGRAM - CREDIT
+                            TRANSFER SYSTEM (PERMATA-SARI)</h3>
+                        <p class="timeline-loc">TANJUNGPURA UNIVERSITY</p>
+                    </div>
+                    <i class="fas fa-chevron-down toggle-icon"></i>
+                </div>
+
+                <div class="detail-content">
+                    <ul>
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="timeline-item scroll-animate">
+                <span class="timeline-date">Odd Semester 2021/2022</span>
+                <div class="timeline-header" onclick="toggleDetail(this)">
+                    <div class="header-text">
+                        <h3 class="timeline-role">PARTICIPANT IN THE NUSANTARA STUDENT EXCHANGE PROGRAM - ISEN MULANG
+                            (PERMATA ISEN MULANG)</h3>
+                        <p class="timeline-loc">UNIVERSITY OF PALANGKA RAYA</p>
+                    </div>
+                    <i class="fas fa-chevron-down toggle-icon"></i>
+                </div>
+
+                <div class="detail-content">
+                    <ul>
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="portfolio">
+        <h2 class="section-title">Project Portfolio Highlights</h2>
+        <div class="grid-3">
+
+            <div class="tech-card">
+                <div class="video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/F1Hsraasmzw" style="background: #000;"></iframe>
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">Video Highlight: Road Project with 3D, 4D, and 5D BIM Implementation</h3>
+                    <p class="card-desc">Preview of 3D, 4D, and 5D BIM implementation on completed projects.</p>
+
+                </div>
+            </div>
+
+            <div class="tech-card">
+                <div class="video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/IhhOxcayvX4" style="background: #000;"></iframe>
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">Video Highlight: Drone Footage with Planned Road Alignment Overlay</h3>
+                    <p class="card-desc">Preview of edited drone footage overlayed with planned road construction
+                        alignments.</p>
+
+                </div>
+            </div>
+            <div class="tech-card">
+                <div class="video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/rRP9nC1TmH4" style="background: #000;"></iframe>
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">LiDAR Data Processing Highlight</h3>
+                    <p class="card-desc">Preview of LiDAR data processing using various GIS software.</p>
+
+                </div>
+            </div>
+
+            <div class="tech-card">
+                <div class="card-img-box">
+                    <img src="porto1.jpg" alt="BIM IKN" style="cursor: pointer;" onclick="openLightbox(this)">
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">JBH SECTION 6A CONSTRUCTION PROJECT, IKN, PENAJAM PASER UTARA, EAST
+                        KALIMANTAN</h3>
+                    <p class="card-desc">3D Model to Schedule Integration (4D BIM) using Navisworks Manage.</p>
+                </div>
+            </div>
+
+            <div class="tech-card">
+                <div class="card-img-box">
+                    <img src="porto2.jpg" alt="BIM IKN" style="cursor: pointer;" onclick="openLightbox(this)">
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">HEALTH AGENCY (DINKES) BUILDING PLANNING PROJECT IN BERAU, EAST KALIMANTAN
+                    </h3>
+                    <p class="card-desc">3D BIM Structural Details, 3D BIM Architectural Details, Quantity Take-Off,
+                        Detail Engineering Design.</p>
+                </div>
+            </div>
+
+            <div class="tech-card">
+                <div class="card-img-box">
+                    <img src="porto3.jpg" alt="BIM IKN" style="cursor: pointer;" onclick="openLightbox(this)">
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">PLANNING PROJECT OF 4 AGENCY BUILDINGS IN BERAU, EAST KALIMANTAN</h3>
+                    <p class="card-desc">3D BIM Structural Details, 3D BIM Plumbing Details, Quantity Take-Off, Detail
+                        Engineering Design.</p>
+                </div>
+            </div>
+
+        </div>
+        <div class="download-container">
+            <a href="https://heyzine.com/flip-book/a24c804d7b.html" target="_blank" class="btn-neon-download">
+                <i class="fas fa-file"></i> VIEW FULL PORTFOLIO
+            </a>
+        </div>
+
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2 class="section-title">Skills & Expertise</h2>
+        <div class="grid-4">
+            <div class="tech-card" style="text-align:center; padding:20px;">
+                <i class="fas fa-cube" style="font-size:3rem; color:var(--cyan-neon); margin-bottom:10px;"></i>
+                <h4>BIM & CAD</h4>
+                <p style="font-size:0.9rem; color:#888;">Revit, Civil 3D, Navisworks, Infraworks, AutoCAD, Basic Visual
+                    Programming Dynamo</p>
+            </div>
+            <div class="tech-card" style="text-align:center; padding:20px;">
+                <i class="fas fa-map-marked-alt"
+                    style="font-size:3rem; color:var(--cyan-neon); margin-bottom:10px;"></i>
+                <h4>GIS & Survey</h4>
+                <p style="font-size:0.9rem; color:#888;">ArcGIS Pro, Global Mapper, DJI Terra, DJI Modify, CloudCompare,
+                    EmlidStudio, RedToolBox, Agisoft Metashape</p>
+            </div>
+            <div class="tech-card" style="text-align:center; padding:20px;">
+                <i class="fas fa-video" style="font-size:3rem; color:var(--cyan-neon); margin-bottom:10px;"></i>
+                <h4>Visual Multimedia</h4>
+                <p style="font-size:0.9rem; color:#888;">Premiere Pro, After Effects, Photoshop, KineMaster, Capcut,
+                    Filmora</p>
+            </div>
+            <div class="tech-card" style="text-align:center; padding:20px;">
+                <i class="fas fa-hard-hat" style="font-size:3rem; color:var(--cyan-neon); margin-bottom:10px;"></i>
+                <h4>Project Management</h4>
+                <p style="font-size:0.9rem; color:#888;">Primavera P6, BoQ/RAB, Microsoft Office (Word, Excel, Power
+                    Point)
+                </p>
+            </div>
+            <div class="tech-card" style="text-align:center; padding:20px;">
+                <i class="fas fa-brain" style="font-size:3rem; color:var(--cyan-neon); margin-bottom:10px;"></i>
+                <h4>Artificial Intelligence (AI)</h4>
+                <p style="font-size:0.9rem; color:#888;">Create Anything with AI, Brainstorming with AI, AI Prompting
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="education">
+        <h2 class="section-title">Education</h2>
+        <div class="grid-3">
+            <div class="tech-card">
+                <div class="card-img-box" style="height: 150px;">
+                    <img src="mwardaniwisuda.jpg" style="object-fit:contain; padding:20px; cursor: pointer;" alt="UPR"
+                        onclick="openLightbox(this)">
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">Bachelor of Civil Engineering</h3>
+                    <p class="card-desc">University of Palangka Raya (2020 - 2024) | 3 Years 7 Months<br><strong>GPA:
+                            3.92 / 4.00</strong>
+                        (Cum Laude)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="certifications">
+        <h2 class="section-title">Licenses & Certifications</h2>
+        <div class="grid-4">
+            <div class="tech-card">
+                <div class="card-img-box">
+                    <img src="l1.png" alt="Sertifikat" style="cursor: pointer;" onclick="openLightbox(this)">
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title" style="font-size:1rem;">Road Maintenance Executor</h3>
+                    <p class="card-desc">Construction Services Development Board (LPJK)</p>
+                </div>
+            </div>
+            <div class="tech-card">
+                <div class="card-img-box">
+                    <img src="l2.png" alt="Sertifikat" style="cursor: pointer;" onclick="openLightbox(this)">
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title" style="font-size:1rem;">Revit Beginner to Advance</h3>
+                    <p class="card-desc">Stufast.id</p>
+                </div>
+            </div>
+            <div class="tech-card">
+                <div class="card-img-box">
+                    <img src="l3.png" alt="Sertifikat" style="cursor: pointer;" onclick="openLightbox(this)">
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title" style="font-size:1rem;">Proficient in Using Autodesk Civil 3D for Road
+                        Infrastructure Design</h3>
+                    <p class="card-desc">Creative Stationn</p>
+                </div>
+            </div>
+            <div class="tech-card">
+                <div class="card-img-box">
+                    <img src="l4.png" alt="Sertifikat" style="cursor: pointer;" onclick="openLightbox(this)">
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title" style="font-size:1rem;">
+                        BIM Structure Beginners to Advanced (Digital Engineering Collaboration in BIM Ecosystem)</h3>
+                    <p class="card-desc">MSIB Kampus Merdeka - PT. Mandutama Multisarana Teknik</p>
+                </div>
+            </div>
+            <div class="tech-card">
+                <div class="card-img-box">
+                    <img src="l5.png" alt="Sertifikat" style="cursor: pointer;" onclick="openLightbox(this)">
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title" style="font-size:1rem;">Resource Management: Optimization of Unit Price and
+                        Material Analysis in BoQ Creation Using Estimator.id</h3>
+                    <p class="card-desc">Estimator.id</p>
+                </div>
+            </div>
+            <div class="tech-card">
+                <div class="card-img-box">
+                    <img src="l6.png" alt="Sertifikat" style="cursor: pointer;" onclick="openLightbox(this)">
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title" style="font-size:1rem;">Basic Course Building Modelling With Revit</h3>
+                    <p class="card-desc">PT Wijaya Karya (Persero) Tbk</p>
+                </div>
+            </div>
+            <div class="tech-card">
+                <div class="card-img-box">
+                    <img src="l7.png" alt="Sertifikat" style="cursor: pointer;" onclick="openLightbox(this)">
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title" style="font-size:1rem;">Personal Branding and Career Planning</h3>
+                    <p class="card-desc">MSIB Kampus Merdeka - PT. Mandutama Multisarana Teknik</p>
+                </div>
+            </div>
+            <div class="tech-card">
+                <div class="card-img-box">
+                    <img src="l8.png" alt="Sertifikat" style="cursor: pointer;" onclick="openLightbox(this)">
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title" style="font-size:1rem;">Structural Calculation Using Sanspro</h3>
+                    <p class="card-desc">MSIB Kampus Merdeka - PT. Mandutama Multisarana Teknik</p>
+                </div>
+            </div>
+            <div class="tech-card">
+                <div class="card-img-box">
+                    <img src="l9.png" alt="Sertifikat" style="cursor: pointer;" onclick="openLightbox(this)">
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title" style="font-size:1rem;">Basic Course Building Modelling With Tekla Structure
+                    </h3>
+                    <p class="card-desc">PT Wijaya Karya (Persero) Tbk</p>
+                </div>
+            </div>
+            <div class="tech-card">
+                <div class="card-img-box">
+                    <img src="l10.png" alt="Sertifikat" style="cursor: pointer;" onclick="openLightbox(this)">
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title" style="font-size:1rem;">Certified Internship - Kampus Merdeka Supporting IKN
+                        Nusantara Construction</h3>
+                    <p class="card-desc">MSIB Kampus Merdeka - Ministry of Public Works - BPSDM</p>
+                </div>
+            </div>
+            <div class="tech-card">
+                <div class="card-img-box">
+                    <img src="l11.png" alt="Sertifikat" style="cursor: pointer;" onclick="openLightbox(this)">
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title" style="font-size:1rem;">Internship as a BIM Engineer</h3>
+                    <p class="card-desc">Core Team - National Road Planning and Supervision (P2JN) East Kalimantan,
+                        Indonesia</p>
+                </div>
+            </div>
+            <div class="tech-card">
+                <div class="card-img-box">
+                    <img src="l12.jpeg" alt="Sertifikat" style="cursor: pointer;" onclick="openLightbox(this)">
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title" style="font-size:1rem;">Revit: Optimize Your BIM Workflow</h3>
+                    <p class="card-desc">LinkedIn - Learning</p>
+                </div>
+            </div>
+            <div class="tech-card">
+                <div class="card-img-box">
+                    <img src="l13.jpeg" alt="Sertifikat" style="cursor: pointer;" onclick="openLightbox(this)">
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title" style="font-size:1rem;">Cert Prep: AutoCAD Civil 3D Certified Professional
+                    </h3>
+                    <p class="card-desc">LinkedIn - Learning</p>
+                </div>
+            </div>
+            <div class="tech-card">
+                <div class="card-img-box">
+                    <img src="l14.png" alt="Sertifikat" style="cursor: pointer;" onclick="openLightbox(this)">
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title" style="font-size:1rem;">Revit MEP Mechanical & Plumbing Certified
+                        Professional</h3>
+                    <p class="card-desc">LinkedIn - Learning</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="courses" style="background: var(--bg-core);">
+
+        <h2
+            style="color: #fff; font-size: 2.2rem; margin-bottom: 30px; text-align: left; border-left: 5px solid var(--cyan-neon); padding-left: 15px;">
+            COURSES & TRAINING
+        </h2>
+
+        <ul class="list-pelatihan">
+            <li>Revit MEP Mechanical & Plumbing Certified Professional (February 16, 2026)</li>
+            <li>Civil 3D Certified Professional (February 13, 2026)</li>
+            <li>Revit: Optimize Your BIM Workflow (February 13, 2026)</li>
+            <li>Proficient in Using Autodesk Civil 3D for Road Infrastructure Design by Creative Station (August 27,
+                2023)</li>
+            <li>Project Management Training Using Primavera Application by CV. Ananta Education (January 14-15, 2023)
+            </li>
+            <li>House Building Construction Project Management Using Primavera P6 by Creative Station (May 31, 2023)
+            </li>
+            <li>Revit Beginner to Advance by PT. Multisarana Teknik (February 16 – June 30, 2023)</li>
+            <li>BIM Training Scientific Week & 5th Congress of IMTSI DKI Jakarta Branch (February 2021)</li>
+            <li>AutoCAD 2D Training (January 4, 2021)</li>
+            <li>Preparation for the Professional World Training (November 5, 2019)</li>
+            <li>Resource Management: Optimization of Unit Price and Material Analysis in BoQ Creation Using Estimator.id
+                (May 8, 2023)</li>
+            <li>Concepts of Compiling Road Infrastructure Project Estimates (February 19, 2021)</li>
+            <li>Digital Engineering Collaboration in BIM Ecosystem (February 20 - May 20, 2023)</li>
+            <li>Road Maintenance Executor – Construction Services Development Board (September 27, 2024)</li>
+        </ul>
+
+    </section>
+
+    <section id="honors">
+        <h2 class="section-title">Honors & Awards</h2>
+        <div class="grid-3">
+            <div class="tech-card">
+                <div class="card-img-box">
+                    <img src="p1.png" style="object-fit:contain; padding:30px; cursor: pointer;" alt="Award"
+                        onclick="openLightbox(this)">
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">Best Graduate of the Engineering Faculty, June 2024 Period</h3>
+                    <p class="card-desc">Cum Laude Predicate (GPA 3.92/4.00) from the University of Palangka Raya.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="patents">
+        <h2 class="section-title">Patents & Intellectual Property</h2>
+        <div class="grid-3">
+            <div class="tech-card">
+                <div class="card-img-box">
+                    <img src="https://e-hakcipta.dgip.go.id/media-metronic/logos/logo-djki-new.png"
+                        style="object-fit:contain; padding:40px;" alt="Patent Doc">
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">The Nation's Future Construction: A Learning Experience Beyond the Campus
+                    </h3>
+                    <p class="card-desc">An inspiring storybook about learning outside the campus.</p>
+
+                    <a href="https://e-hakcipta.dgip.go.id/legal/c/ZjNjOTU5MTdlYWRjYWQzNDA0OWU5MGNhMzNkOTIzNWIK"
+                        target="_blank" class="btn-card">
+                        <span>View Patent Credential</span>
+                        <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="publications" style="background: var(--bg-core);">
+
+        <h2
+            style="color: #fff; font-size: 2.2rem; margin-bottom: 40px; text-align: left; border-left: 5px solid var(--cyan-neon); padding-left: 15px;">
+            JOURNAL PUBLICATIONS
+        </h2>
+
+        <div class="grid-3">
+
+            <div class="tech-card">
+                <div class="jurnal-img-box">
+                    <img src="j1.png" alt="Cover Jurnal 1">
+                </div>
+                <div class="card-content" style="justify-content: space-between;">
+                    <h3 class="card-title">APPLICATION OF BUILDING INFORMATION MODELING 3D, 4D, AND 5D IN THE DESIGN
+                        PLANNING OF IHM DOCK ACCESS ROAD</h3>
+
+                    <a href="https://ejournal.unisnu.ac.id/JDPT/article/view/7065" target="_blank"
+                        style="color: var(--cyan-neon); text-decoration: none; font-size: 0.9rem; margin-top: 15px; display: inline-block; font-weight: bold;">
+                        READ JOURNAL <i class="fas fa-arrow-right" style="margin-left: 5px;"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="tech-card">
+                <div class="jurnal-img-box">
+                    <img src="j2.png" alt="Cover Jurnal 2">
+                </div>
+                <div class="card-content" style="justify-content: space-between;">
+                    <h3 class="card-title">Implementation of Waste Management in Residential Projects</h3>
+
+                    <a href="https://e-jurnal.pnl.ac.id/portal/article/view/5772" target="_blank"
+                        style="color: var(--cyan-neon); text-decoration: none; font-size: 0.9rem; margin-top: 15px; display: inline-block; font-weight: bold;">
+                        READ JOURNAL <i class="fas fa-arrow-right" style="margin-left: 5px;"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="tech-card">
+                <div class="jurnal-img-box">
+                    <img src="j3.png" alt="Cover Jurnal 3">
+                </div>
+                <div class="card-content" style="justify-content: space-between;">
+                    <h3 class="card-title">Redesain of IHM Dock Access Road with the Implementation of Building
+                        Information Modelling</h3>
+
+                    <a href="https://e-journal.upr.ac.id/index.php/basement/article/view/12715" target="_blank"
+                        style="color: var(--cyan-neon); text-decoration: none; font-size: 0.9rem; margin-top: 15px; display: inline-block; font-weight: bold;">
+                        READ JOURNAL <i class="fas fa-arrow-right" style="margin-left: 5px;"></i>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="contact" style="text-align:center;">
+        <h2 class="section-title" style="justify-content:center;">Contact Me</h2>
+        <p style="margin-bottom:40px; color:#aaa;">Ready to collaborate on Digital Construction & Engineering projects.
+        </p>
+
+        <h4 style="color: var(--cyan-neon); margin-bottom: 20px; letter-spacing: 2px; font-size: 0.9rem;">CONTACT &
+            FREELANCE</h4>
+        <div class="social-grid" style="margin-top: 0; margin-bottom: 40px;">
+            <a href="https://wa.me/6285157564588" class="social-btn" title="WhatsApp"><i
+                    class="fab fa-whatsapp"></i></a>
+            <a href="mailto:wardanidani208@gmail.com" class="social-btn" title="Email"><i
+                    class="fas fa-envelope"></i></a>
+            <a href="https://www.linkedin.com/in/m-wardani/" class="social-btn" title="LinkedIn"><i
+                    class="fab fa-linkedin-in"></i></a>
+            <a href="https://fastwork.id/user/bimborneo" target="_blank" class="social-btn" title="Fastwork">
+                <img src="logofastwork.png" alt="Fastwork" class="fw-logo">
+            </a>
+        </div>
+
+        <h4 style="color: var(--cyan-neon); margin-bottom: 20px; letter-spacing: 2px; font-size: 0.9rem;">SOCIAL MEDIA
+        </h4>
+        <div class="social-grid" style="margin-top: 0;">
+            <a href="https://www.x.com/anzvest" class="social-btn" title="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/wardanni_/" class="social-btn" title="Instagram"><i
+                    class="fab fa-instagram"></i></a>
+            <a href="https://www.youtube.com/@BIMBorneo" class="social-btn" title="YouTube"><i
+                    class="fab fa-youtube"></i></a>
+            <a href="https://www.tiktok.com/@bimborneo" class="social-btn" title="TikTok"><i
+                    class="fab fa-tiktok"></i></a>
+        </div>
+
+        <footer class="footer-section">
+            <div class="footer-content">
+                <p>&copy; <span id="current-year"></span> <strong>Muhammad Wardani | BIM Borneo</strong>. All Rights
+                    Reserved.</p>
+                <p class="disclaimer">
+                    All website content, including 3D modeling, LiDAR data processing results, and drone documentation,
+                    are the intellectual property of the creator. Copying, reproducing, or using assets without written
+                    permission is strictly prohibited.
+                </p>
+            </div>
+            <div id="imageModal" class="modal-lightbox" onclick="closeLightbox()">
+                <span class="close-lightbox">&times;</span>
+                <img class="modal-lightbox-content" id="modalImageExpanded">
+            </div>
+        </footer>
+
+        <script>
+            document.getElementById('current-year').textContent = new Date().getFullYear();
+        </script>
+
+        <script>
+            // 1. MOBILE MENU FUNCTION (HAMBURGER)
+            function toggleMenu() {
+                const navMenu = document.getElementById('navMenu');
+                if (navMenu) {
+                    navMenu.classList.toggle('active');
+                }
+            }
+
+            // 2. EXPERIENCE DETAILS FUNCTION (ACCORDION)
+            function toggleDetail(element) {
+                // Find the wrapper element (timeline-item)
+                const item = element.closest('.timeline-item');
+                const content = item.querySelector('.detail-content');
+
+                // Check if this item is already active
+                const isActive = item.classList.contains('active');
+
+                // Close all other items to keep it tidy
+                document.querySelectorAll('.timeline-item').forEach(otherItem => {
+                    otherItem.classList.remove('active');
+                    const otherContent = otherItem.querySelector('.detail-content');
+                    if (otherContent) otherContent.classList.remove('active');
+                });
+
+                // If previously inactive, activate it now
+                if (!isActive) {
+                    item.classList.add('active');
+                    content.classList.add('active');
+                }
+            }
+
+            // 3. AUTO CLOSE MENU WHEN A LINK IS CLICKED
+            document.querySelectorAll('.nav-link').forEach(link => {
+                link.addEventListener('click', () => {
+                    const navMenu = document.getElementById('navMenu');
+                    if (navMenu) navMenu.classList.remove('active');
+                });
+            });
+
+            // 4. LIGHTBOX (ZOOM Picture)
+            function openLightbox(element) {
+                const modal = document.getElementById('imageModal');
+                const modalImg = document.getElementById('modalImageExpanded');
+
+                modal.style.display = "flex";
+                modalImg.src = element.src;
+            }
+
+            function closeLightbox() {
+                document.getElementById('imageModal').style.display = "none";
+            }
+        </script>
+
+        <div id="imageModal" class="modal-lightbox" onclick="closeLightbox()">
+            <span class="close-lightbox">&times;</span>
+            <img class="modal-lightbox-content" id="modalImageExpanded">
+        </div>
+
+</body>
+
+</html>
